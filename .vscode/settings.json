@@ -1,5 +1,5 @@
 {
     "workbench.iconTheme": "vscode-icons",
-    "python.defaultInterpreterPath": "C:\\Users\\lenovo\\AppData\\Roaming\\Python\\Python39\\python",
-    "python.pythonPath": "C:\\Users\\lenovo\\AppData\\Roaming\\Python\\Python39\\python",
+    // "python.defaultInterpreterPath": "C:\\Users\\lenovo\\AppData\\Roaming\\Python\\Python39\\python",
+    "python.defaultInterpreterPath": "D:\\LATIHAN PEMROGRAMAN\\ENVIRONMENT PYTHON\\env\\Scripts\\python",
 }
