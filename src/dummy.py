@@ -14,11 +14,12 @@ files = os.listdir(alamat_data)
 try:    
     for file in files:
         if file.endswith('.csv'):
-            df = pd.read_csv(alamat_data, delimiter=';')
-
+            # df = pd.read_csv(alamat_data, delimiter=';')
+            df = pd.read_csv(os.path.join(alamat_data, file))
 
 except:
     pass
 
-
 print(files) # hasilnya >> ['WTI_USD.csv', 'XBR_USD.csv']
+
+df = pd.read_csv(alamat_data, usecols=files)
