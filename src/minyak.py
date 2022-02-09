@@ -9,6 +9,6 @@ brent_data = r'D:\LATIHAN PEMROGRAMAN\(TUGAS AKHIR)\Preprocess Logam dan Minyak\
 wti = pd.read_excel(wti_data)
 brent = pd.read_excel(brent_data)
 
-print(wti)
-print(brent)
+# print(wti)
+# print(brent)
 

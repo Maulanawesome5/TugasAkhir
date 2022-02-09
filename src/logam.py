@@ -9,6 +9,6 @@ silver_data = r'D:\LATIHAN PEMROGRAMAN\(TUGAS AKHIR)\Preprocess Logam dan Minyak
 gold = pd.read_excel(gold_data)
 silver = pd.read_excel(silver_data)
 
-print(gold)
-print(silver)
+# print(gold)
+# print(silver)
 
