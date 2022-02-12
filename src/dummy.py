@@ -1,4 +1,5 @@
 import os
+from numpy import datetime_data
 import pandas as pd
 
 alamat_data = r'D:/LATIHAN PEMROGRAMAN/(TUGAS AKHIR)/Preprocess Logam dan Minyak/csv_format'
@@ -37,8 +38,12 @@ print(df)
 # Mengecek nilai yang kosong atau NaN pada data
 print(df.isnull().sum()) # XBR_Date (544 NaN), XBR_Price (544 NaN) 
 
-
-
-
-
+# Coba menyimpan dataframe menjadi file excel
+saveToExcel = pd.ExcelWriter(
+    r'D:/LATIHAN PEMROGRAMAN/(TUGAS AKHIR)/src/dataframe_to_excel/dummy.xlsx',
+    engine="openpyxl",
+    date_format="YYYY-MM-DD"
+)
+df.to_excel(saveToExcel, sheet_name="Crude Oil", index=False)
+saveToExcel.close()
 
