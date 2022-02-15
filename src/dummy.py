@@ -1,5 +1,6 @@
 import os
-from numpy import datetime_data
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 alamat_data = r'D:/LATIHAN PEMROGRAMAN/(TUGAS AKHIR)/Preprocess Logam dan Minyak/csv_format'
@@ -46,4 +47,13 @@ saveToExcel = pd.ExcelWriter(
 )
 df.to_excel(saveToExcel, sheet_name="Crude Oil", index=False)
 saveToExcel.close()
+
+# Mencoba visualisasi data
+# matriks_data = np.array(["WTI_Price"], ["XBR_Price"])
+
+# plt.plot(matriks_data)
+
+plt.xlabel("2017-2022")
+plt.ylabel("Closing Price")
+plt.show()
 
